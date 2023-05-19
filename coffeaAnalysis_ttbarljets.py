@@ -135,8 +135,8 @@ class TtbarAnalysis(processor_base):
         # normalization for MC
         x_sec = events.metadata["xsec"]
 #        x_sec = 10000000
-#       nevts_total = events.metadata["nevts"]
-	nevts_total = 10000
+        nevts_total = events.metadata["nevts"]
+#	nevts_total = 10000
 
         # This lumi number was obtained with
         # brilcalc lumi -c web -i Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt -u /pb --normtag normtag_PHYSICS_2015.json  --begin 256630 --end 260627 > lumi2015D.txt
