@@ -16,5 +16,5 @@ hep.histplot(data,histtype="errorbar", color='k', capsize=4, label="Data")
 hep.histplot([ttbar, wjets],stack=True, histtype='fill', label=bklabels, sort='yield')
 plt.legend(frameon=False)
 plt.xlabel("$H_{T}$ [Gev]");
-plt.savefig('finalplotdatav2.png')
+plt.savefig('finalplotdata-resized.png')
 plt.show()
