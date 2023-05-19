@@ -13,8 +13,8 @@ bklabels = ["ee-signal","ttjets-background"]
 hep.style.use("CMS")
 hep.cms.label("open data",data=True, lumi=2.3, year=2015)
 hep.histplot(data,histtype="errorbar", color='k', capsize=4, label="Data")
-#hep.histplot([ttbar, wjets],stack=True, histtype='fill', label=bklabels, sort='yield')
+hep.histplot([ttbar, wjets],stack=True, histtype='fill', label=bklabels, sort='yield')
 plt.legend(frameon=False)
 plt.xlabel("$H_{T}$ [Gev]");
-plt.savefig('finalplotdata.png')
+plt.savefig('finalplotdatav2.png')
 plt.show()

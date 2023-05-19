@@ -141,7 +141,7 @@ class TtbarAnalysis(processor_base):
         # This lumi number was obtained with
         # brilcalc lumi -c web -i Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt -u /pb --normtag normtag_PHYSICS_2015.json  --begin 256630 --end 260627 > lumi2015D.txt
         # lumi in units of /pb
-        lumi = 2300.0
+        lumi = 0.23
         if process != "data":
             xsec_weight = x_sec * lumi / nevts_total
         else:
